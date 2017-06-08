@@ -4,13 +4,20 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>UX 101 - Minimum Viable UX (Maybe)</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/night.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <style>
+    .reveal .madlib {
+      background-color: #694a25;
+      font-family: monospace;
+    }
+    </style>
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -24,8 +31,148 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+        <section>
+          <h1>UX 101</h1>
+          <p>In ten minutes or less</p>
+          <p>The <em>you're about to hackathon version</em></p>
+        </section>
+
+        <section>
+          <section>
+            <h1>User eXperience</h1>
+            <p class="fragment">a person’s experience interacting with your (product/app/system/etc)</p>
+          </section>
+
+          <section>
+            <h2>How a user feels</h2>
+            <p>is it delightful? playful? serious? professional?</p>
+          </section>
+
+          <section>
+            <h2>How a user can function</h2>
+            <p>can they accomplish what they need to? can they tell what’s going on?</p>
+          </section>
+        </section>
+
+				<section data-background-image="elevator.jpg" data-background-size="contain">
+        </section>
+				<section data-background-image="morebadux.png">
+        </section>
+
+
+        <section>
+          <h1>User-centered design</h1>
+          <p class="fragment">the notion that design decisions should be based on the needs and wants of users</p>
+        </section>
+
+        <section>
+          <section>
+            <h1>Consider context</h1>
+          </section>
+          <section>
+            <h2>Attention</h2>
+            <p>are they rushed (running to catch a bus) or are they expecting to sit down and read instructions (putting together furniture)?</p>
+          </section>
+          <section>
+            <h2>Clarity</h2>
+            <p>can they see everything they need clearly (or is a sign hiding behind a tree?)</p>
+          </section>
+          <section>
+            <h2>Stress</h2>
+            <p>are they coming to your site frustrated and looking for answers, trying to pay bills, looking to find a friend to communicate with?</p>
+          </section>
+          <section>
+            <h2>Connectivity</h2>
+            <p>are they sitting in a classroom and can easily get answers, or are they on a bus on their phone without internet?</p>
+          </section>
+        </section>
+
+        <section>
+  				<section>
+            <h1>Tap into motivation</h1>
+          </section>
+  				<section>
+            <h2>We're driven by intrinsic things</h2>
+            <ul>
+              <li>autonomy</li>
+              <li>belonging</li>
+              <li>curiosity</li>
+              <li>love</li>
+              <li>learning</li>
+              <li>mastery</li>
+              <li>meaning</li>
+            </ul>
+          </section>
+  				<section>
+            <h2>We're driven by extrinsic things</h2>
+            <ul>
+              <li>badges</li>
+              <li>competition</li>
+              <li>fear of failure</li>
+              <li>fear of punishment</li>
+              <li>gold stars</li>
+              <li>money</li>
+              <li>points</li>
+              <li>rewards</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <p>Do you know what your potential users are thinking?</p>
+            <h2 class="fragment highlight-red">No</h2>
+            <p class="fragment">So do some research</p>
+          </section>
+
+          <section>
+            <h2>Generative Research (Why)
+            </h2>
+            <img class="stretch" src="generative.png" />
+          </section>
+
+          <section>
+            <h2>Evaluative Research (How)
+            </h2>
+            <img class="stretch" src="evaluative.png" />
+          </section>
+        </section>
+
+        <section>
+          <h2>It's a process
+          </h2>
+          <img class="stretch" src="designthinking.png" />
+        </section>
+
+        <section>
+          <section>
+            <h1>Know Your Scenarios</h1>
+            <p>As a <span class="madlib">type of person</span></p>
+            <p>I want to <span class="madlib">do some thing</span></p>
+            <p>So that I can <span class="madlib">reap some benefit</span></p>
+          </section>
+          <section>
+            <p>As a <span class="madlib">student</span></p>
+            <p>I want to <span class="madlib">type my notes</span></p>
+            <p>So that I can <span class="madlib">easily find them later</span></p>
+          </section>
+          <section>
+            <p>As a <span class="madlib">visitor</span></p>
+            <p>I want to <span class="madlib">view train routes</span></p>
+            <p>So that I can <span class="madlib">get to my destination</span></p>
+          </section>
+          <section>
+            <p>As a <span class="madlib">television enthusiast</span></p>
+            <p>I want to <span class="madlib">be alerted when my favorite show comes on</span></p>
+            <p>So that I can <span class="madlib">tell my friends all the spoilers</span></p>
+          </section>
+        </section>
+
+				<section>
+          <p>The End</p>
+          <iframe class="stretch" width="100%" height="100%" src="https://www.youtube.com/embed/dln9xDsmCoY" frameborder="0" allowfullscreen></iframe>
+          <small>Why user-centered design is crucial. An analogy, by John Boykin.</small>
+        </section>
 			</div>
 		</div>
 
@@ -37,12 +184,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+        history: true
 			});
 		</script>
 	</body>
